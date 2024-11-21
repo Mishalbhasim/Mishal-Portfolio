@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishal - Devoloper Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            /* Stick to the top of the viewport */
+            width: 100%;
+            /* Occupy the full width of the viewport */
+            background-color: #ffffff;
+            /* Customize background color as needed */
+            z-index: 100;
+            /* Ensure it appears above other elements on the page */
+            /* Add any other styling you want */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #04043c;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: blueviolet;
+            font-size: 1.2rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 75px 0;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+
+        main hr {
+            margin: 101px 124px;
+            background-color: #414689;
+            height: 0.4px;
+            border: 0;
+        }
+
+        h1 {
+            font-size: 4rem;
+            display: flex;
+            justify-content: center;
+            color: #13dfd5;
+        }
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 30px 0 30px;
+            margin: 30px 50px 82px 50px;
+
+        }
+
+        .bg3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            border-radius: 15px;
+            /* Add border radius for curved corners */
+            width: 80%;
+            /* Adjust the width as needed */
+            margin: 0 auto;
+            /* Center the container */
+            color: black;
+        }
+
+        /* Style for the sections */
+        .section {
+            flex: 1;
+            /* Each section takes up an equal portion of the container */
+            padding: 20px;
+            /* Add padding as needed */
+            text-align: center;
+            /* Center-align text and images */
+        }
+
+        /* Style for the vertical line */
+        .vertical-line {
+            width: 1px;
+            background-color: #dddddd;
+            margin: 0 10px;
+            /* Add margin for spacing */
+        }
+
+        /* Style for the image within each section */
+        .section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            /* Center-align images */
+            margin: 0 auto;
+            /* Center-align images */
+            width: 10%;
+        }
+
+        /* Style for the column headings */
+        .column-heading {
+            font-weight: bold;
+            margin-top: 10px;
+            /* Add margin above the heading */
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: blueviolet;
+        }
+
+        h3 {
+            color: blueviolet;
+            font-size: 1.5rem;
+        }
+
+        .thirdSection {
+            margin-top: 30;
+        }
+
+        div.section {
+            margin-top: 100px;
+        }
+
+        .Education {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Style for the Education section */
+        .fourthSection {
+            padding: 20px;
+            text-align: center;
+            /* Center-align the text within the section */
+        }
+
+        /* Style for each education entry */
+        .education-entry {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            /* Align the text within each entry to the left */
+        }
+
+        .education-entry h2 {
+            font-size: 2.3rem;
+            margin-bottom: 5px;
+            text-align: center;
+            /* Center-align the degree title */
+        }
+
+        .education-entry p {
+            margin: 0;
+        }
+
+        .course-entry1 {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            /* Align the text within each entry to the left */
+        }
+
+        .course-entry1 h2 {
+            font-size: 2.3rem;
+            margin-bottom: 5px;
+            text-align: center;
+            /* Center-align the degree title */
+        }
+
+        .course-entry1 p {
+            margin: 0;
+        }
+
+        .course-entry2 {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            /* Align the text within each entry to the left */
+        }
+
+        .course-entry2 h2 {
+            font-size: 2.3rem;
+            margin-bottom: 5px;
+            text-align: center;
+            /* Center-align the degree title */
+        }
+
+        .course-entry2 p {
+            margin: 0;
+        }
+
+        .fifthSection {
+            text-align: center;
+            /* Center-align text within the section */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            /* Add curved corners to the section */
+            margin: 0 250px;
+            margin-bottom: 30px;
+        }
+
+        .styled-button {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 97px;
+            /* Adjust the border-radius for curvature */
+            padding: 10px 20px;
+            /* Adjust padding for button size */
+            font-size: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            /* Remove underline from anchor */
+            color: black;
+            /* Set button text color */
+            display: flex;
+            justify-content: center;
+        }
+
+        .styled-button:hover {
+            background-color: #f0f0f0;
+            /* Change color on hover */
+        }
+
+        .social-Icons {
+            margin-top: 60px;
+            /* Add space above the icons */
+            display: flex;
+            
+            justify-content: center;
+            gap: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <nav>
+            <div class="left">Mishal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href=""> Blog</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="Home">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Mishal</span>
+                <div>and I am a passionate </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection"><img src="bg1.png" alt="img"></div>
+        </section>
+
+        <hr id="About">
+
+        <section class="secondSection">
+            <h1>About</h1>
+            <div class="bg3"><img src="bg3.png" alt="img" width="30%"></div>
+            <p>Greetings! I'm Mishal Bhasim, a Full-stack developer with a passion for crafting delightful web experiences.
+                My journey into the world of web development started with an insatiable curiosity and a love for
+                problem-solving.
+
+                As a recent graduate in Engineering, I've had the privilege of learning the ins and outs of Full-Stack
+                technologies, including Java,C++,HTML5, CSS3, and JavaScript. I'm a firm believer in the power of clean
+                and efficient code to create seamless user interfaces. Whether it's building interactive web
+                applications or optimizing website performance, I'm always up for a coding challenge.
+
+                Beyond coding, I'm an avid advocate for user-centered design. I believe that the best web experiences
+                are those that put users first. When I'm not at my computer, you can find me hiking in the great
+                outdoors or exploring new places.
+
+                If you're looking to collaborate on a web project or simply want to chat about Full-Stack development,
+                feel free to reach out. Let's bring your web vision to life!</p>
+        </section>
+
+        <hr id="Skills">
+
+        <section class="thirdSection">
+            <h1>Skills</h1>
+            <div class="container">
+                <div class="section">
+                    <img src="fcIcon.jpg" alt="Image 1">
+                    <h2 class="column-heading">Front_end developer</h2>
+                    <p>I am an enthusiastic and detail-oriented front-end developer who is passionate about crafting
+                        visually appealing and responsive web applications. As a recent graduate with a strong
+                        foundation in front-end technologies, I am excited to kickstart my career and contribute to
+                        cutting-edge projects that push the boundaries of user interface design.</p>
+                    <h3>Languages:</h3>
+                    <p>HTML5, CSS3, and JavaScript</p>
+                </div>
+                <div class="vertical-line"></div> <!-- Vertical line -->
+                <div class="section">
+                    <img src="bcIcon.jpg" alt="Image 2">
+                    <h2 class="column-heading">Back-End Devoloper</h2>
+                    <p>I am a dedicated and results-driven back-end developer with a strong passion for architecting and
+                        optimizing the server-side components of web applications. Armed with a solid foundation in
+                        programming and databases, I am eager to leverage my skills to build scalable and efficient
+                        back-end systems that power exceptional user experiences.</p>
+                    <h3>Languages:</h3>
+                    <p>C, C++, Java</p>
+                    <h3>Databases:</h3>
+                    <p>mySQL</p>
+                </div>
+        </section>
+
+        <hr id="Education">
+
+        <section class="fourthSection">
+            <h1>Education & Certification</h1>
+            <div class="education-entry">
+                <h2>Bachelor of Engineering</h2>
+                <p><strong>HKBK College of Engineering</strong></p>
+                <p>Electrical and Electronics Engineering</p>
+                <p>2017 - 2021</p>
+            </div>
+            <div class="course-entry1">
+                <h2>Embedded Systems</h2>
+                <p><strong>5 Square Technologies</strong></p>
+                <p>2022</p>
+            </div>
+            <div class="course-entry2">
+                <h2>Full-Stack development</h2>
+                <p><strong>Pankaj Sir Academy</strong></p>
+                <p>2023</p>
+            </div>
+
+        </section>
+
+        <hr id="Contact">
+
+        <section class="fifthSection">
+            <h1>Contact Me</h1>
+            <p>Whether you have a question, a project idea, or just want to say hello and discuss about anything, I'd
+                love to hear from you! Feel free
+                to reach out.</p>
+            <a href="contact.html" class="styled-button">Start a Conversation</a>
+            <div class="social-Icons"><a href="https://www.instagram.com/mishal_bhasim/">
+                    <img src="insta.png" alt="instagram" width="75">
+                </a>
+                <a href="https://www.facebook.com/mishal.bhasim.9/">
+                    <img src="fb.png" alt="facebook" width="80">
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Electrical and Electronics Engineer', '&amp; Full-Stack Developer.'],
+            typeSpeed: 50,
+            loop: true, // Add this line to enable looping
+        });
+    </script>
+</body>
+
+</html>
